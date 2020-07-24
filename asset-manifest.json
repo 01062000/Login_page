@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Login_page/static/css/main.6257648e.chunk.css",
+    "main.js": "/Login_page/static/js/main.89790cb3.chunk.js",
+    "main.js.map": "/Login_page/static/js/main.89790cb3.chunk.js.map",
+    "runtime-main.js": "/Login_page/static/js/runtime-main.0a3a570f.js",
+    "runtime-main.js.map": "/Login_page/static/js/runtime-main.0a3a570f.js.map",
+    "static/css/2.d5fa9f53.chunk.css": "/Login_page/static/css/2.d5fa9f53.chunk.css",
+    "static/js/2.beccf42e.chunk.js": "/Login_page/static/js/2.beccf42e.chunk.js",
+    "static/js/2.beccf42e.chunk.js.map": "/Login_page/static/js/2.beccf42e.chunk.js.map",
+    "index.html": "/Login_page/index.html",
+    "precache-manifest.d520437057b1435fb5f275ca3f013ad3.js": "/Login_page/precache-manifest.d520437057b1435fb5f275ca3f013ad3.js",
+    "service-worker.js": "/Login_page/service-worker.js",
+    "static/css/2.d5fa9f53.chunk.css.map": "/Login_page/static/css/2.d5fa9f53.chunk.css.map",
+    "static/css/main.6257648e.chunk.css.map": "/Login_page/static/css/main.6257648e.chunk.css.map",
+    "static/js/2.beccf42e.chunk.js.LICENSE.txt": "/Login_page/static/js/2.beccf42e.chunk.js.LICENSE.txt",
+    "static/media/bootstrap.js.map": "/Login_page/static/media/bootstrap.js.04bdc874.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0a3a570f.js",
+    "static/css/2.d5fa9f53.chunk.css",
+    "static/js/2.beccf42e.chunk.js",
+    "static/css/main.6257648e.chunk.css",
+    "static/js/main.89790cb3.chunk.js"
+  ]
+}
