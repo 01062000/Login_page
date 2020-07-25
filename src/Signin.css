@@ -105,10 +105,10 @@ a{
 .remember{
     color: rgb(74, 206, 195);
 }
-.register{
+/*.register{
     transform: translateY(-40px);
     margin-left: 250px;
-}
+}*/
 .click{
     text-decoration: none;
     color: rgba(175,106,252,1);
@@ -121,10 +121,9 @@ a{
 .buttun{
     background: linear-gradient(135deg, rgba(175,106,252,1) 39%, rgba(116,17,255,1) 100%);
     border: none;
-    width: 495px;
     border-radius: 50px!important;
     height: 50px!important;
-    display: block!important;
+    transition: all 0.2s linear;
 }
 .buttun:hover{
     background: rgb(74, 206, 195)!important;
@@ -141,25 +140,5 @@ small, .form-check label{
         --bs-gutter-y: 0rem;
     }
 }
-@media(max-width:1000px){
-    .register{
-        margin-left: 175px;
-    }
-    .buttun{
-        width: 375px;
-    }
-}
-@media(max-width:768px){
-    .buttun{
-        width: 355px;
-    }
-}
-@media(max-width:485px){
-    .buttun{
-        width: 255px;
-    }
-    .register{
-        margin-left: 10px;
-    }
-}
+
 

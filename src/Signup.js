@@ -76,7 +76,7 @@ const Signup = () =>{
 
                         <div className="division">
                             <div className="row">
-                                <div className="col-6 mx-auto mb-2">
+                                <div className="col-6 mx-auto mb-0">
                                     <span className="main_heading">
                                         <NavLink aria-current="page" exact activeClassName = "active" className="default heading" to="/">
                                             Login
@@ -90,91 +90,96 @@ const Signup = () =>{
                             </div>
 
                             <form className="myform" onSubmit = {formSubmit} >
+                                <div className="container-fluid">
+                                        <div className="mb-2">
+                                            <Tooltip title="Full Name">
+                                                <input type="text"
+                                                    autoComplete="off"
+                                                    className="form-control"
+                                                    autoComplete="off" 
+                                                    id="exampleFormControlInput1"
+                                                    placeholder="Name"
+                                                    name = "name"
+                                                    value = {data.name}
+                                                    onChange = {InputEvent}
+                                                />
+                                            </Tooltip>
+                                        </div>
 
-                                <div className="mb-2">
-                                    <Tooltip title="Full Name">
-                                        <input type="text"
-                                            autoComplete="off"
-                                            className="form-control"
-                                            autoComplete="off" 
-                                            id="exampleFormControlInput1"
-                                            placeholder="Name"
-                                            name = "name"
-                                            value = {data.name}
-                                            onChange = {InputEvent}
-                                        />
-                                    </Tooltip>
-                                </div>
+                                        <div className="mb-2">
+                                            <Tooltip title="Contact Number">
+                                                <input type="number"
+                                                    autoComplete="off" 
+                                                    className="form-control"
+                                                    id="exampleFormControlInput1"
+                                                    placeholder="Mobile Number"
+                                                    name = "phone"
+                                                    value = {data.phone}
+                                                    onChange = {InputEvent}
+                                                />
+                                            </Tooltip>
+                                        </div>
 
-                                <div className="mb-2">
-                                    <Tooltip title="Contact Number">
-                                        <input type="number"
-                                            autoComplete="off" 
-                                            className="form-control"
-                                            id="exampleFormControlInput1"
-                                            placeholder="Mobile Number"
-                                            name = "phone"
-                                            value = {data.phone}
-                                            onChange = {InputEvent}
-                                        />
-                                    </Tooltip>
-                                </div>
+                                        <div className="mb-2">
+                                            <Tooltip title="Your Valid Email">
+                                                <input type="email"
+                                                    autoComplete="off" 
+                                                    className="form-control"
+                                                    id="exampleFormControlInput1"
+                                                    placeholder="name@example.com"
+                                                    name = "email"
+                                                    value = {data.email}
+                                                    onChange = {InputEvent}
+                                                />
+                                            </Tooltip>
+                                        </div>
 
-                                <div className="mb-2">
-                                    <Tooltip title="Your Valid Email">
-                                        <input type="email"
-                                            autoComplete="off" 
-                                            className="form-control"
-                                            id="exampleFormControlInput1"
-                                            placeholder="name@example.com"
-                                            name = "email"
-                                            value = {data.email}
-                                            onChange = {InputEvent}
-                                        />
-                                    </Tooltip>
-                                </div>
+                                        <div className="mb-2">
+                                            <Tooltip title="password">
+                                                <input type="password"
+                                                    autoComplete="off"
+                                                    className="form-control"
+                                                    id="exampleFormControlInput1"
+                                                    placeholder="password"
+                                                    name = "password"
+                                                    value = {data.password}
+                                                    onChange = {InputEvent}
+                                                />
+                                            </Tooltip>
+                                        </div>
 
-                                <div className="mb-2">
-                                    <Tooltip title="password">
-                                        <input type="password"
-                                            autoComplete="off"
-                                            className="form-control"
-                                            id="exampleFormControlInput1"
-                                            placeholder="password"
-                                            name = "password"
-                                            value = {data.password}
-                                            onChange = {InputEvent}
-                                        />
-                                    </Tooltip>
-                                </div>
+                                        <div className="mb-2">
+                                            <Tooltip title="Conform password">
+                                                <input type="password"
+                                                    autoComplete="off"
+                                                    className="form-control"
+                                                    id="exampleFormControlInput1"
+                                                    placeholder="Conform password"
+                                                    name = "Conform_password"
+                                                    value = {data.Conform_password}
+                                                    onChange = {InputEvent}
+                                                />
+                                            </Tooltip>
+                                        </div>
 
-                                <div className="mb-2">
-                                    <Tooltip title="Conform password">
-                                        <input type="password"
-                                            autoComplete="off"
-                                            className="form-control"
-                                            id="exampleFormControlInput1"
-                                            placeholder="Conform password"
-                                            name = "Conform_password"
-                                            value = {data.Conform_password}
-                                            onChange = {InputEvent}
-                                        />
-                                    </Tooltip>
-                                </div>
+                                     <div className="row">
+                                        <div className="col-md-6 col-lg-6 col-sm-6 col-xl-6 col-12 text-left ">
+                                            <label className = "remember">
+                                                <input type="checkbox" />
+                                                <span>I agree all terms & conditions</span>
+                                            </label>
+                                        </div>
 
-                                <div className="row">
-                                    <label className = "remember">
-                                        <input type="checkbox" />
-                                        <span>I agree all terms & conditions</span>
-                                    </label>
-
-                                    <div className="bn text-right">
-                                        <Link to = "/" >Login here</Link>
-                                    </div>
+                                        <div className="col-md-6 col-lg-6 col-sm-6 col-xl-6 text-right col-12  ">
+                                            <div className="bn">
+                                                <Link to = "/" >Login here</Link>
+                                            </div>
+                                        </div>
+                                     </div>
                                 </div>
 
                                 <div className="my-3">
-                                    <Button type="submit" variant="contained" className="buttun">
+                                    <Button type="submit" variant="contained" className=" btn btn-block btn-primary btn-lg buttun">
                                         <small><i class="user pr-2"><PersonAddIcon/></i>Create Account</small>
                                     </Button>
                                 </div>

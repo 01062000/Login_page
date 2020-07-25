@@ -89,47 +89,50 @@ const Signin = () =>{
                             </div>
 
                             <form className="myform" onSubmit = {formSubmit}>
-                                <div className="mb-3">
-                                    <Tooltip title="Registered Email">
-                                    <input type="email"
-                                        autoComplete="off"
-                                        className="form-control" 
-                                        id="exampleFormControlInput1"
-                                        placeholder="name@example.com"
-                                        name = "email"
-                                        value = {data.email}
-                                        onChange = {InputEvent}
-                                     />
-                                    </Tooltip>
-                                </div>
+                                <div className="container-fluid">
+                                        <div className="mb-3">
+                                            <Tooltip title="Registered Email">
+                                                <input type="email"
+                                                autoComplete="off"
+                                                className="form-control" 
+                                                id="exampleFormControlInput1"
+                                                placeholder="name@example.com"
+                                                name = "email"
+                                                value = {data.email}
+                                                onChange = {InputEvent}
+                                            />
+                                            </Tooltip>
+                                        </div>
 
-                                <div className="mb-3">
-                                    <Tooltip title="password">
-                                        <input type="password"
-                                            className="form-control"
-                                            id="exampleFormControlInput1"
-                                            placeholder="password"
-                                            name = "password"
-                                            value = {data.password}
-                                            onChange = {InputEvent}
-                                        />
-                                    </Tooltip>
-                                </div>
-
-                                <div className="row">
-                                    <div className="col-md-6 col-12 text-left">
-                                        <label className = "remember">
-                                            <input type="checkbox" />
-                                            <span>Remember Me</span>
-                                        </label>
-                                    </div>
-                                    <div className="col-md-6 col-12 register text-right">
-                                            <Link to = "/Signup" className = "click">Register here</Link>
+                                        <div className="mb-3">
+                                            <Tooltip title="password">
+                                                <input type="password"
+                                                    className="form-control"
+                                                    id="exampleFormControlInput1"
+                                                    placeholder="password"
+                                                    name = "password"
+                                                    value = {data.password}
+                                                    onChange = {InputEvent}
+                                                />
+                                            </Tooltip>
+                                        </div>
+                                
+        
+                                    <div className="row">
+                                        <div className="col-md-6 col-lg-6 col-sm-6 col-xl-6 col-12 text-left ">
+                                            <label className = "remember">
+                                                <input type="checkbox" />
+                                                <span>Remember Me</span>
+                                            </label>
+                                        </div>
+                                        <div className="col-md-6 col-lg-6 col-sm-6 col-xl-6 col-12 text-right">
+                                                <Link to = "/Signup" className = "click">Register here</Link>
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div className="my-3">
-                                    <Button type="submit" variant="contained"  className=" buttun btn btn-primary btn-lg btn-block">
+                                    <Button type="submit" variant="contained"  className=" btn btn-block btn-primary btn-lg buttun">
                                         <small><i class="user pr-2"><PersonIcon/></i>Login</small>
                                     </Button>
                                 </div>
