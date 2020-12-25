@@ -88,7 +88,7 @@ const Signin = () =>{
                                 </div>
                             </div>
 
-                            <form className="myform" onSubmit = {formSubmit}>
+                            <form className="myform" onSubmit = {formSubmit} netlify>
                                 <div className="container-fluid">
                                         <div className="mb-3">
                                             <Tooltip title="Registered Email">
